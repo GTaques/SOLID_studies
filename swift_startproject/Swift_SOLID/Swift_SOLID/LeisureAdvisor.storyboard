@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="AzR-wd-QOd">
+            <objects>
+                <viewController id="BE9-rW-LxX" customClass="HomeViewController" customModule="Swift_SOLID" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Zkr-Me-cC5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Escolha uma categoria:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CvA-Ch-Rt1">
+                                <rect key="frame" x="20.5" y="95" width="373" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="jTK-x2-v2N">
+                                <rect key="frame" x="20.5" y="176" width="373" height="327"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="lOe-a4-Guo">
+                                        <rect key="frame" x="0.0" y="0.0" width="373" height="148.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t0A-AX-qaT">
+                                                <rect key="frame" x="0.0" y="0.0" width="171.5" height="148.5"/>
+                                                <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Gastronomia">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="srI-x7-Nal">
+                                                <rect key="frame" x="201.5" y="0.0" width="171.5" height="148.5"/>
+                                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Entretenimento">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="G83-5E-YYv">
+                                        <rect key="frame" x="0.0" y="178.5" width="373" height="148.5"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cQy-tO-MgA">
+                                                <rect key="frame" x="0.0" y="0.0" width="171.5" height="148.5"/>
+                                                <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Esportes">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eON-41-6xg">
+                                                <rect key="frame" x="201.5" y="0.0" width="171.5" height="148.5"/>
+                                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Viagem">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uwa-9x-fxs" userLabel="NaturezaButton">
+                                <rect key="frame" x="20.5" y="533" width="171.5" height="148.5"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Natureza">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="jTK-x2-v2N" firstAttribute="width" secondItem="EhZ-1H-PaB" secondAttribute="width" multiplier="0.9" id="6Mz-0w-cRe"/>
+                            <constraint firstItem="Uwa-9x-fxs" firstAttribute="top" secondItem="jTK-x2-v2N" secondAttribute="bottom" constant="30" id="Dd7-PV-P02"/>
+                            <constraint firstItem="Uwa-9x-fxs" firstAttribute="leading" secondItem="jTK-x2-v2N" secondAttribute="leading" id="Gmf-Uy-dRV"/>
+                            <constraint firstItem="jTK-x2-v2N" firstAttribute="centerX" secondItem="EhZ-1H-PaB" secondAttribute="centerX" id="LGr-Re-zIc"/>
+                            <constraint firstItem="Uwa-9x-fxs" firstAttribute="height" secondItem="G83-5E-YYv" secondAttribute="height" id="MTK-Af-ljS"/>
+                            <constraint firstItem="jTK-x2-v2N" firstAttribute="top" secondItem="CvA-Ch-Rt1" secondAttribute="bottom" constant="40" id="NTZ-EU-9Z2"/>
+                            <constraint firstItem="jTK-x2-v2N" firstAttribute="bottom" secondItem="EhZ-1H-PaB" secondAttribute="centerY" constant="50" id="SNW-hQ-AwL"/>
+                            <constraint firstItem="CvA-Ch-Rt1" firstAttribute="width" secondItem="EhZ-1H-PaB" secondAttribute="width" multiplier="0.9" id="UEG-oa-lw8"/>
+                            <constraint firstItem="jTK-x2-v2N" firstAttribute="height" secondItem="EhZ-1H-PaB" secondAttribute="height" multiplier="0.4" id="UeH-iG-NfH"/>
+                            <constraint firstItem="Uwa-9x-fxs" firstAttribute="width" secondItem="eON-41-6xg" secondAttribute="width" id="enP-7K-fvy"/>
+                            <constraint firstItem="CvA-Ch-Rt1" firstAttribute="centerX" secondItem="EhZ-1H-PaB" secondAttribute="centerX" id="k4l-ZT-vGP"/>
+                            <constraint firstItem="CvA-Ch-Rt1" firstAttribute="height" secondItem="EhZ-1H-PaB" secondAttribute="height" multiplier="0.05" id="lL4-al-cZs"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="EhZ-1H-PaB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iag-8v-yrz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130" y="107"/>
+        </scene>
+    </scenes>
+</document>
